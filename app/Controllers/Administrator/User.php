@@ -71,4 +71,9 @@ class User extends BaseController
 </script>";
         return redirect()->to(base_url('administrator/user'));
     }
+
+    public function edit()
+    {
+        # code...
+    }
 }
