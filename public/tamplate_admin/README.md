@@ -1,0 +1,125 @@
+# Able Pro Free Bootstrap 4 Admin Template 
+
+Able Pro dashboard template built using Bootstrap 4 framework, It is a free lite version of [Able Pro](https://codedthemes.com/item/able-pro-lite-free-admin-template/) Dashboard Template will complete your admin dashboard needs.
+
+<!--- ![Able Pro Free Admin Template Preview Image](...) --->
+
+Able Pro admin template comes with variety of components like Alert, Button, Badges, Breadcrumb, Pagination, Card, Collapse, Carousel, Progress, Modal, Spinner, Tabs & Pills, Toasts, Icons, Form Elements, Table, Charts, Maps & Authentication Pages.
+
+The code structure is highly flexible to use and modify. 
+
+Its design adapt any screen size easily even if retina screens (retina tested).
+
+It is modern concept dashboard design with eye catchy colors.
+
+Wish you happy to use our product in your project.
+
+## Free Version Preview & Download
+
+Check out live preview of Able Pro lite version & download it.
+
+#### Preview
+
+ - [Demo](https://codedthemes.com/item/able-pro-lite-free-admin-template/)
+
+#### Download
+
+ - [Download from Github](https://github.com/phoenixcoded/able-pro-bootstrap-dashboard.git)
+ - [Download from CodedThemes]( https://codedthemes.com/item/able-pro-lite-free-admin-template/) & receive important notification instantly in your maiL.
+ 
+ ## Premium Version Preview & Download
+
+Able Pro Admin Template is available to purchase. Visit its numerous demos and make your purchase decision.
+#### Preview
+
+ - [Demo](http://ableproadmin.com/)
+
+#### Download
+
+ - [Purchase from Themeforest](https://themeforest.net/item/able-pro-responsive-bootstrap-4-admin-template/19300403?s_rank=12)
+
+## Table of contents
+
+ * [Getting Started](#getting-started)
+ * [Online Documentation](#online-documentation)
+ * [Build With](#build-with)
+ * [Directory-structure](#directory-structure)
+ * [RoadMap](#roadmap)
+ * [Author](#author)
+ * [Contributing](#contributing)
+ * [Issues?](#issues)
+ * [License](#license)
+ * [Other Dashboard Products](#other-dashboard-products)
+ * [Social Profiles](#social-profiles)
+ 
+## Getting Started
+
+Clone from Github 
+```
+git clone https://github.com/phoenixcoded/able-pro-bootstrap-dashboard.git
+```
+*no other dependencies required to run the Able Pro Template*
+
+## Online Documentation
+
+Able Pro Lite version documentation cover in its Pro version documentation - check our [website.](http://ableproadmin.com/bootstrap/docs/)
+
+## Build With
+
+ - [Bootstrap 4](https://getbootstrap.com/)
+ - [SASS](https://sass-lang.com/)
+ 
+## Directory Structure
+```
+able-pro/
+├── dist/
+    ├── assets/
+    |   ├── css/
+    |   ├── fonts/
+    |   ├── images/
+    |   ├── js/
+    ├── auth-signin.html
+    ├── auth-signup.html
+    ├── bc_alert.html
+    ├── ... More
+├── src/
+|   ├── assets/
+|   |   ├── fonts/
+|   |   ├── images/
+|   |   ├── js/
+|   |   ├── json/
+|   |   ├── scss/
+|   |   ├── html/
+|   ├── .babelrc
+|   ├── gulpfile.js
+|   ├── package.json
+|   ├── package-lock.json
+|   ├── README.MD
+├── ... More
+```
+
+## Author
+
+Design and code is completely written by Themeforest's design and development team. We are happy to welcome the contributors work for our all repositiories.
+
+## Issues
+
+Please generate Github issue if you found bug in any version. We are try to be responsive to resolve the issue.
+
+## License
+
+ - Licensed cover under [MIT](https://github.com/phoenixcoded/able-pro-free-bootstrap-admin-template/blob/master/LICENSE)
+
+## Other Dashboard Products
+
+ - [Free Bootstrap 4 Admin Template](https://codedthemes.com/item/category/free-templates/free-bootstrap-admin-templates)
+ - [Free React Dashboard Template](https://codedthemes.com/item/category/free-templates/free-react-admin-templates)
+ - [Free Angular Dashboard Template](https://codedthemes.com/item/category/free-templates/free-angular-admin-templates)
+ - [Premium Bootstrap & Angular Admin Template](https://codedthemes.com/item/category/templates/admin-templates/)
+ 
+## Social Profiles
+ - Dribbble [https://dribbble.com/codedthemes](https://dribbble.com/codedthemes)
+ - Behance [https://www.behance.net/codedthemes](https://www.behance.net/codedthemes)
+ - Facebook [https://www.facebook.com/codedthemes](https://www.facebook.com/codedthemes)
+ - Twitter [https://twitter.com/codedthemes](https://twitter.com/codedthemes)
+ - Instagram [https://www.instagram.com/codedthemes/](https://www.instagram.com/codedthemes/)
