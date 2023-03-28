@@ -12,6 +12,8 @@ class User extends BaseController
         // $this->cek = session()->get('logged_in');
         $this->level = session()->get('level');
         $this->id_user = session()->get('id');
+        // dd(session()->get());
+
         $this->user = new ModelUsers();
     }
 
@@ -60,20 +62,52 @@ class User extends BaseController
         $in['status'] = $this->request->getPost('status');
 
         $this->user->insert($in);
-        echo "<script>
-        Swal.fire({
-            position: 'top-end',
-            icon: 'success',
-            title: 'Data berhasil di simpan',
-            showConfirmButton: false,
-            timer: 1500
-          })
-</script>";
+
+        session()->setFlashdata('success', 'Data Berhasil ditambah');
         return redirect()->to(base_url('administrator/user'));
     }
 
-    public function edit()
+    public function edit($id)
     {
-        # code...
+        $d['judul'] = 'Edit Data User';
+        $d['kategori'] = 'Data User';
+        $d['sub'] = 'Menambahkan Data User';
+
+        $user = $this->user->find($id);
+        $d['id'] = $id;
+        $d['nama'] = $user['nama'];
+        $d['username'] = $user['username'];
+        $d['level'] = $user['level'];
+        $d['status'] = $user['status'];
+
+        return view('administrator/user/form_edit', $d);
+    }
+
+    public function updateUser($id)
+    {
+        if (!empty($this->request->getVar('password'))) {
+            $in['password'] = password_hash($this->request->getVar('password'), PASSWORD_BCRYPT);
+        }
+
+        $in['nama'] = $this->request->getPost('nama');
+        $in['username'] = $this->request->getPost('username');
+        $in['level'] = $this->request->getPost('level');
+        $in['status'] = $this->request->getPost('status');
+
+        $this->user->update($id, $in);
+        session()->setFlashdata('success', 'Data Berhasil di ubah');
+        return redirect()->to(base_url('administrator/user'));
+    }
+
+    public function hapus($id)
+    {
+        if ($id == $this->id_user) {
+            session()->setFlashdata('error', 'Tidak bisa menghapus USER yang sedang login');
+        } else {
+            $this->user->delete($id);
+            session()->setFlashdata('success', 'Data Berhasil di Hapus');
+        }
+
+        return redirect()->to(base_url('administrator/user'));
     }
 }

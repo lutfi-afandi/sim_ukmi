@@ -611,7 +611,14 @@
 	<script>
 		$('.toast-right').toast('show');
 	</script>
+	<script type="text/javascript">
+		setTimeout(function() {
 
+			// Closing the alert
+			$('.alert').alert('close');
+		}, 4000);
+	</script>
+	<?php $this->renderSection('js') ?>
 
 </body>
 

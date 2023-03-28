@@ -69,6 +69,7 @@ class Login extends BaseController
                         'nama'  => $cekUserLogin['nama'],
                         'status'  => $cekUserLogin['status'],
                         'gambar'  => $cekUserLogin['gambar'],
+                        'id'  => $cekUserLogin['id'],
                         'level'   => $idlevel
                     ];
                     session()->set($simpan_session);

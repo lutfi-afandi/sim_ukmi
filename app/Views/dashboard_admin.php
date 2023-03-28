@@ -18,7 +18,7 @@ $jumlahprestasi = $db->table('prestasi')->countAllResults();
     <!--INI TUH BUAT CARD DI DASHBOARD bawah-->
     <br />
     <div>
-        <h4 class="badge badge-info">Statistik UKMI Ar-Rahman Teknokrat</h4>
+        <h4 class="badge badge-success">Statistik UKMI Ar-Rahman Teknokrat</h4>
     </div>
     <div class="row">
         <div class="col-lg-7 col-md-12">

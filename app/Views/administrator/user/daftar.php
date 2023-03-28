@@ -13,6 +13,29 @@ Daftar User
                         <div align="right" class="" style="margin-bottom:10px">
                             <a href="<?php echo base_url(); ?>administrator/user/tambah" class="btn btn-info btn-sm"><i class="fas fa-plus"> </i> Tambah</a>
                         </div>
+
+                        <!-- Alert error -->
+                        <?php if (session()->getFlashdata('error')) { ?>
+                            <div class="alert alert-danger d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24">
+                                    <use xlink:href="#exclamation-triangle-fill"></use>
+                                </svg>
+                                <div>
+                                    <?= session()->getFlashdata('error'); ?>
+                                </div>
+                            </div>
+                        <?php } ?>
+                        <!-- Alert sukses -->
+                        <?php if (session()->getFlashdata('success')) { ?>
+                            <div class="alert alert-success d-flex align-items-center" role="alert">
+                                <svg class="bi flex-shrink-0 me-2" width="24" height="24">
+                                    <use xlink:href="#check-circle-fill"></use>
+                                </svg>
+                                <div>
+                                    <?= session()->getFlashdata('success'); ?>
+                                </div>
+                            </div>
+                        <?php } ?>
                         <table id="example" class="table table-striped table-sm" style="width:100%">
                             <thead>
                                 <tr>
@@ -56,10 +79,10 @@ Daftar User
                                         <!-- <td><?php echo $t['password']; ?></td> -->
                                         <td>
 
-                                            <a href="<?php echo base_url(); ?>index.php/administrator/user/edit/<?php echo $t['id']; ?>">
+                                            <a href="<?php echo base_url(); ?>administrator/user/edit/<?php echo $t['id']; ?>">
                                                 <button class="btn btn-success btn-sm"><i class="feather icon-edit"></i></button>
                                             </a>
-                                            <a href="<?php echo base_url(); ?>index.php/administrator/user/hapus/<?php echo $t['id']; ?>" onclick="return confirm('Yakin ingin hapus ?')">
+                                            <a href="<?php echo base_url(); ?>administrator/user/hapus/<?php echo $t['id']; ?>" onclick="return confirm('Yakin ingin hapus ?')">
                                                 <button class="btn btn-danger btn-sm"><i class="feather icon-trash"></i></button>
                                             </a>
                                         </td>
